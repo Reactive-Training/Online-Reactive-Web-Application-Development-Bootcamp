@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactive Web Development</title>
+
+    <!-- Types Of CSS styles -->
+
+    <!-- External Style -->
+    <!-- For More Structure properties view  Structure.css-->
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/Structure.css" />
+
+
+    <!-- Commonly Used Styles and Combinators -->
+    <!-- For understanding purpose we have used topic name as css file name -->
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/CommonStyles&Combinators.css" />
+
+    <!-- Pseudo-class AND Pseudo-Elements -->
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/PseudoClassandElements.css" />
+
+
+    <!-- Internal Style -->
+    <style>
+        /* Structure Of Css */
+        /* 
+            Selector {
+                property : value;
+            }
+        */
+        .app-main {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- All topics will be covered in same html file with different css files which is named in topic name
+         Files are included inside head tag. Please Refer above
+    -->
+
+    <!-- Structure of CSS -->
+
+    <!-- Inline Style can be used with style="" and inline style is the first priority in all types-->
+    <!-- Example 
+        In External Style for same .app-main class color is given as white. Please Check Structure.css
+    -->
+    <div class="app-main" style="color : blue">
+        Welcome to online Reactive Web Application Training
+    </div>
+
+    <!-- It makes one horizontal line and we can modify this by using styles -->
+    <hr />
+
+
+    <!-- ------------------------------------- NEXT TOPIC  --------------------------------------------------- -->
+
+    <!-- Commonly Used Classes and Combinators -->
+    <!-- Styles are mentioned in CommonStyles&Combinators.css Please refer -->
+    <div class="main-styles">
+
+        <!-- class and id names can be anything which might be understandable -->
+        <p class="color-main">Example for color and background-color properties</p>
+
+        <hr />
+        <p class="opacity-main">
+            opacity limit ( 0 - 1 )
+            <br />
+            Default Value is always 1
+        </p>
+
+        <hr />
+        <!-- Font has many properties
+            In this we have used only font-family, font-weight and font-style
+        -->
+        <p class="font-main">
+            This is an text with Arial family and bold ( Like You ) and italic ( lightly slanding like / )
+        </p>
+
+        <hr />
+
+        <!-- Combinators  -->
+        Unordered List with list style none
+        <ul class="list-main">
+            <li>List 1</li>
+            <li>List 2</li>
+            <span>
+                <li>List 3</li>
+            </span>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ul>
+
+        <span>This is first Span Element</span>
+        <span>This is Second Span Element</span>
+        
+        <p>Intermediate between spans</p>
+
+        <span>This is Third Span Element</span>
+
+
+        <!-- ------------------------------------- NEXT TOPIC  --------------------------------------------------- -->
+
+        <hr />
+        <!-- Pseudo Class and Pseudo Elements -->
+        <!-- Styles are mentioned in PseudoClassandElements.css  Please refer -->
+
+        <!-- # is used in href because it will remain in same page ( No Redirection Occurs ) -->
+        <a href="#" class="anchor-main">Please Click Here!!!!!!</a>
+
+        <a href="#" class="anchor-main-2">Link 2 </a>
+
+        <div class="pseudo-main">
+            <p>makes a man</p>
+        </div>
+
+        
+        <div class="text-hover-main">
+            Get Your mouse Here to view hidden content and select this  ( double click on text ) and note the color changes
+        </div>
+        <p class="hidden-text">This content is Hidden</p>
+
+    </div>
+
+</body>
+
+</html>

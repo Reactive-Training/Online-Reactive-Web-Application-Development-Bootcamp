@@ -1,0 +1,96 @@
+.main-styles .color-main {
+    /* color property changes the text color */
+    color: white;
+
+    /* Background property changes the content background */
+    background-color: coral;
+}
+
+.main-styles .opacity-main {
+    /* This changes the transparency of text or element */
+    opacity: 0.5;
+}
+
+.main-styles .font-main {
+    /* This is like which fonts we have to use */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Font weight gives us thickness */
+    font-weight: bold;
+
+    /* Font style like italic ( lightly slanding ) */
+    font-style: italic;
+}
+
+.main-styles .list-main {
+    /* Which is used for bullet points view, circular disc etc... */
+    /* None means no points are viewed */
+    list-style-type: none;
+}
+
+/* Combinators  */
+
+/* It means how we are going to select an elements for giving styles */
+
+/* Types Of Combinators  */
+
+
+/* 1. Descendant Selector ( space ) */
+
+/* It is for selecting child elements */
+
+/* For Example li is placed inside ul
+    which says that
+        ul is parent of li &
+        li is child of ul
+*/
+
+.list-main li{
+    /* It Selects all li element inside ul */
+    color : teal
+}
+
+
+/* 2. Child Selector ( > ) */
+
+/* It selects only the child of ul
+    For Example the third li has no background for it, because its parent is span
+*/
+.list-main > li{
+    background-color: yellow;
+}
+
+/* Difference between  Descendant & Child Selector*/
+
+/*
+    Descendant selects all the child of that parent element
+    whereas Child Selects only the direct child of that parent Element
+*/
+
+/* 3. Adjacent Sibling Selector ( + ) */
+
+/* 
+    It means it selects the element which is immediately following to that element ( mentioned element )
+*/
+
+.list-main + span{
+    font-weight: bold;
+}
+
+
+/* 4. General Sibling Selector (~) */
+/* In this it selects all following element next to that given element */
+.list-main ~ span{
+    background-color: yellowgreen;
+}
+
+/* Note 
+    The First span is bold and it has background
+    second and third span has backgroung but text is not in bold
+    This is main difference between General and Adjacent Sibling Selector 
+*/
+ 
+
+
+/* Please Practise it */
+/* Practice makes a man perfect */

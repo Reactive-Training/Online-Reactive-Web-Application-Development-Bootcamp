@@ -1,0 +1,58 @@
+/* Pseudo class and Pseudo Elements Selectors*/
+
+/* 
+    Pseudo Class are mentioned by using : ( Colon )
+*/
+
+/* :active means while clicking the text or link */
+.main-styles .anchor-main:active{
+    color : red;
+}
+
+
+/* :active means while mouse hover the text or link */
+/* I have mentioned only a element. So it applied for all a element inside .main-styles */
+.main-styles a:hover{
+    color : white;
+    background-color: green;
+}
+
+/* Visited and link pseudo class selectore are there . Please practice it */
+
+
+/* Pseudo Elements  */
+
+/* 
+    Pseudo Class are mentioned by using ( :: )
+*/
+
+/* Append after the content */
+.main-styles .pseudo-main p::after{
+    content: " Perfect";
+}
+
+/* Append before the content */
+.main-styles .pseudo-main p::before{
+    content: "Practice ";
+}
+
+
+/* Common Examples  */
+
+.main-styles .hidden-text{
+    width : 200px;
+    height : 200px;
+    background-color: yellowgreen;
+    display: none;
+}
+
+.main-styles .text-hover-main:hover + .hidden-text{
+    display: block;
+}
+
+
+/* Which shows selected text color differently */
+.main-styles .text-hover-main::selection{
+    color : white;
+    background-color: black;
+}

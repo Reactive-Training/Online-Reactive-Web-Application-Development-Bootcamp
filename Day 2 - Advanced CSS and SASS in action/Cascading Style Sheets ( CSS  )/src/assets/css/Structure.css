@@ -1,0 +1,44 @@
+/* 
+    General Structure
+
+    Selector {
+        property : value;
+    }
+*/
+
+/* Only important content is mentioned below. Please make use of it */
+
+/* Selector may be any one of these
+
+  1. for classes , selector must be start with . ( dot )
+        Example : 
+            .app-main {
+
+            }
+    
+  2. for id , selector must start with # ( hash ) 
+        Example : 
+            #app-main {
+
+            }
+
+  3. for tags or elements , selector can be used as same like tag name  
+        Example : 
+            div {
+
+            }
+*/
+
+/* Priority in css styles */
+
+/* 
+    1. Inline Style
+    2. Internal & External Style
+*/
+
+.app-main {
+    /* Color for Text */
+    color: white;
+    /* Background Color for content ( text )  background */
+    background-color: burlywood;
+}
